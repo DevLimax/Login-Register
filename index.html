@@ -1,12 +1,10 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -23,7 +21,7 @@
     <div class="wrapper">
         <div class="form-box login">
             <h2>Login</h2>
-            <form action="{% url 'Login'%}" method="POST"> {% csrf_token %}
+            <form action="{% url 'Login'%}" method="POST">
                 <span class="icon-close">
                     <ion-icon name="close"></ion-icon>
                 </span>
@@ -51,7 +49,7 @@
         </div>
         <div class="form-box register">
             <h2>Registration</h2>
-            <form action="{% url 'Register' %}" method="POST" > {% csrf_token %} 
+            <form action="{% url 'Register' %}" method="POST" >
                 <span class="icon-close">
                     <ion-icon name="close"></ion-icon>
                 </span>
@@ -83,7 +81,7 @@
             </form> 
         </div>
     </div>
-    <script src="{% static 'js/script.js' %}"></script>
+    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
